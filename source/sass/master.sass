@@ -1,1 +1,34 @@
-@import base
+@import normalize
+
+// @import layout, not being used
+
+// @import colors
+// inspiration: https://dribbble.com/shots/2559850-Loyalty-Comp
+$main-color: mediumaquamarine
+$tomato: rgb(243, 79, 88)
+$bright-blue: rgb(13, 186, 190)
+$dark-gray: rgb(105, 109, 120)
+
+// @import base
+body
+  color: white
+  font-family: 'Gloria Hallelujah', cursive
+
+
+
+// @import header
+.image-circular
+  max-width: 400px
+  max-height: 400px
+  width: 60vw
+  height: 60vw
+  background-image: url('../images/ali_7.jpg')
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+  border-radius: 50%
+  margin: 0 auto
+
+header
+  background-color: $tomato
+  text-align: center
