@@ -1,5 +1,12 @@
 @import normalize
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+
 // @import layout, not being used
 
 // @import colors
@@ -12,17 +19,16 @@ $dark-gray: rgb(105, 109, 120)
 // @import base
 body
   color: white
-  font-family: 'Gloria Hallelujah', cursive
-
+  font-family: 'PT Mono', monospace
 
 
 // @import header
 .image-circular
-  max-width: 400px
-  max-height: 400px
-  width: 60vw
-  height: 60vw
-  background-image: url('../images/ali_7.jpg')
+  max-width: 300px
+  max-height: 300px
+  width: 40vw
+  height: 40vw
+  background-image: url('../images/ali_1.jpg')
   background-repeat: no-repeat
   background-size: contain
   background-position: center
@@ -31,4 +37,47 @@ body
 
 header
   background-color: $tomato
+  color: $bright-blue
+  text-align: center
+  padding: 1rem
+  text-shadow: -1px 1px 0px black
+  letter-spacing: .2em
+  text-transform: uppercase
+
+.intro
+  // transform: translate(0, 50px)
+
+.greeting
+  margin-top: 0
+
+.real-deal
+  margin-bottom: 0
+  // transform: translate(0, -80px)
+
+.links
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+
+.links--button
+  text-decoration: none
+  display: inline-block
+  margin-top: .4em
+
+.clickable
+  display: flex
+  align-items: flex-start
+  padding: 1em
+  background-color: $bright-blue
+  color: white
+  width: 49vw
+  min-width: 290px
+  justify-content: space-around
+
+.clickable-figure
+  margin-right: 1em
+
+.clickable-body
+  flex: 1
+  margin: 0
   text-align: center
