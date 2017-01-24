@@ -30,9 +30,10 @@ gulp.task('scripts', function () {
     .pipe(gulp.dest('./js'))
 })
 
-gulp.task('default', ['copy-html', 'copy-images', 'styles'], function () {
+gulp.task('default', ['copy-html', 'copy-images', 'styles', 'scripts'], function () {
   gulp.watch('./source/sass/**/*.sass', ['styles'])
   gulp.watch('./source/index.html', ['copy-html'])
+  gulp.watch('./source/js/**/*.js', ['scripts'])
   gulp.watch('./index.html', browserSync.reload)
 
   browserSync.init({
