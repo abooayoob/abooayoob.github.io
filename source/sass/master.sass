@@ -20,8 +20,10 @@ $dark-gray: rgb(105, 109, 120)
 body
   color: white
   font-family: 'PT Mono', monospace
+  background-color: $bright-blue
 
-
+.container
+  margin: 1rem
 // @import header
 .image-circular
   max-width: 300px
@@ -42,12 +44,12 @@ body
 .disappear
   opacity: 0
 
-header
+.site-header
   background-color: $tomato
-  color: $bright-blue
+  color: white
   text-align: center
   padding: 1rem
-  text-shadow: -1px 1px 0px black
+  // text-shadow: -1px 1px 0px black
   letter-spacing: .2em
   text-transform: uppercase
 
@@ -61,6 +63,7 @@ header
   margin-bottom: 0
   // transform: translate(0, -80px)
 
+// @import contact
 .links
   display: flex
   flex-wrap: wrap
@@ -88,3 +91,41 @@ header
   flex: 1
   margin: 0
   text-align: center
+
+// end contact
+
+// @import projects
+
+.projects__header
+  text-align: center
+
+.projects__project
+  margin: 0 0 1rem 0
+  display: flex
+  border: 5px solid $dark-gray
+
+.project__image
+  flex: 1
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+
+.project__text-container
+  flex: 2
+  padding: 2rem
+  background-color: white
+  color: $dark-gray
+
+.project_title
+  font-size: 1.5rem
+  margin-top: 0
+
+.prayer-time
+  background-image: url('../images/prayerTimeScreenshot.png')
+
+@media screen and (max-width: 500px)
+  .projects__project
+    flex-direction: column
+
+  .project__image
+    min-height: 200px

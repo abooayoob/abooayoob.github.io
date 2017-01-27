@@ -411,7 +411,11 @@ html {
 
 body {
   color: white;
-  font-family: 'PT Mono', monospace; }
+  font-family: 'PT Mono', monospace;
+  background-color: #0dbabe; }
+
+.container {
+  margin: 1rem; }
 
 .image-circular {
   max-width: 300px;
@@ -432,12 +436,11 @@ body {
 .disappear {
   opacity: 0; }
 
-header {
+.site-header {
   background-color: #f34f58;
-  color: #0dbabe;
+  color: white;
   text-align: center;
   padding: 1rem;
-  text-shadow: -1px 1px 0px black;
   letter-spacing: .2em;
   text-transform: uppercase; }
 
@@ -481,3 +484,40 @@ header {
       flex: 1;
   margin: 0;
   text-align: center; }
+
+.projects__header {
+  text-align: center; }
+
+.projects__project {
+  margin: 0 0 1rem 0;
+  display: -ms-flexbox;
+  display: flex;
+  border: 5px solid #696d78; }
+
+.project__image {
+  -ms-flex: 1;
+      flex: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.project__text-container {
+  -ms-flex: 2;
+      flex: 2;
+  padding: 2rem;
+  background-color: white;
+  color: #696d78; }
+
+.project_title {
+  font-size: 1.5rem;
+  margin-top: 0; }
+
+.prayer-time {
+  background-image: url("../images/prayerTimeScreenshot.png"); }
+
+@media screen and (max-width: 500px) {
+  .projects__project {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .project__image {
+    min-height: 200px; } }
