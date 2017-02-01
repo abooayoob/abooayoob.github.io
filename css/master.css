@@ -414,9 +414,6 @@ body {
   font-family: 'PT Mono', monospace;
   background-color: #0dbabe; }
 
-.container {
-  margin: 1rem; }
-
 .image-circular {
   max-width: 300px;
   max-height: 300px;
@@ -484,6 +481,10 @@ body {
       flex: 1;
   margin: 0;
   text-align: center; }
+
+.projects {
+  max-width: 800px;
+  margin: 0 auto; }
 
 .projects__header {
   text-align: center; }
