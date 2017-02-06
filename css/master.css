@@ -500,6 +500,9 @@ body {
   border: 5px solid #696d78;
   background-color: #f34f58; }
 
+.projects__project:last-of-type {
+  margin-bottom: 3rem; }
+
 .project__image {
   -ms-flex: 1;
       flex: 1;
@@ -526,9 +529,40 @@ body {
   background-image: url("../images/city-explorer-natural.jpg");
   opacity: .5; }
 
+.contact {
+  background-color: #f34f58;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.contact__link {
+  background-color: white;
+  padding: 1rem;
+  color: #696d78;
+  border: 5px solid #696d78;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  margin: 1rem;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.fa {
+  font-size: 30px; }
+
+.contact__text {
+  margin-left: 1rem; }
+
 @media screen and (max-width: 600px) {
   .projects__project {
     -ms-flex-direction: column;
         flex-direction: column; }
   .project__image {
-    min-height: 200px; } }
+    min-height: 200px; }
+  .contact {
+    -ms-flex-direction: column;
+        flex-direction: column; } }

@@ -111,6 +111,9 @@ body
   border: 5px solid $dark-gray
   background-color: $tomato
 
+.projects__project:last-of-type
+  margin-bottom: 3rem
+
 .project__image
   flex: 1
   background-repeat: no-repeat
@@ -135,9 +138,44 @@ body
   background-image: url('../images/city-explorer-natural.jpg')
   opacity: .5
 
+
+
+
+
+// footer
+.contact
+  background-color: $tomato
+  display: flex
+  flex-wrap: wrap
+
+// .contact__link:first-of-type
+//   margin-left: 1rem
+.contact__link
+  background-color: white
+  padding: 1rem
+  color: $dark-gray
+  border: 5px solid $dark-gray
+  display: flex
+  align-items: center
+  flex-grow: 1
+  margin: 1rem
+  justify-content: center
+
+
+
+.fa
+  font-size: 30px
+  // color: $tomato
+
+.contact__text
+  margin-left: 1rem
+
 @media screen and (max-width: 600px)
   .projects__project
     flex-direction: column
 
   .project__image
     min-height: 200px
+
+  .contact
+    flex-direction: column
