@@ -7,6 +7,9 @@ html
 *, *:before, *:after
   box-sizing: inherit
 
+a, a:visited
+  text-decoration: none
+
 // @import layout, not being used
 
 // @import colors
@@ -96,6 +99,7 @@ body
 
 .projects
   max-width: 800px
+  width: 90%
   margin: 0 auto
 
 .projects__header
@@ -105,11 +109,12 @@ body
   margin: 0 0 1rem 0
   display: flex
   border: 5px solid $dark-gray
+  background-color: $tomato
 
 .project__image
   flex: 1
   background-repeat: no-repeat
-  background-size: contain
+  background-size: cover
   background-position: center
 
 .project__text-container
@@ -123,9 +128,14 @@ body
   margin-top: 0
 
 .prayer-time
-  background-image: url('../images/prayerTimeScreenshot.png')
+  background-image: url('../images/prayer-time.jpg')
+  opacity: .5
 
-@media screen and (max-width: 500px)
+.city-explorer
+  background-image: url('../images/city-explorer-natural.jpg')
+  opacity: .5
+
+@media screen and (max-width: 600px)
   .projects__project
     flex-direction: column
 
