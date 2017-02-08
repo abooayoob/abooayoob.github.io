@@ -431,7 +431,7 @@ body {
   position: relative; }
 
 .animates {
-  transition: opacity 300ms ease-in-out; }
+  transition: opacity 400ms ease-in; }
 
 .disappear {
   opacity: 0; }
@@ -501,7 +501,7 @@ body {
   background-color: #f34f58; }
 
 .projects__project:last-of-type {
-  margin-bottom: 3rem; }
+  margin-bottom: 4rem; }
 
 .project__image {
   -ms-flex: 1;
@@ -534,7 +534,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  padding: .5rem; }
+
+.contact__header {
+  width: 100vw;
+  text-align: center; }
 
 .contact__link {
   background-color: white;
@@ -545,9 +550,9 @@ body {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  margin: 1rem;
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+  margin: .5rem;
   -ms-flex-pack: center;
       justify-content: center; }
 
