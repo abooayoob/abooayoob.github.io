@@ -448,7 +448,8 @@ body {
   margin-top: 0; }
 
 .real-deal {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-size: 3rem; }
 
 .links {
   display: -ms-flexbox;
@@ -485,12 +486,14 @@ body {
   margin: 0;
   text-align: center; }
 
-.projects {
+.projects,
+.whoami {
   max-width: 800px;
   width: 90%;
   margin: 0 auto; }
 
-.projects__header {
+.projects__header,
+.whoami__header {
   text-align: center; }
 
 .projects__project {
@@ -529,6 +532,23 @@ body {
   background-image: url("../images/city-explorer-natural.jpg");
   opacity: .5; }
 
+.whoami__body {
+  line-height: 1.5rem;
+  letter-spacing: .05rem;
+  border: 5px solid #696d78;
+  background-color: white;
+  color: #696d78;
+  padding: 2rem; }
+
+.highlight {
+  display: inline-block;
+  background-color: #f34f58;
+  color: white;
+  padding: 0 .5rem 0 .5rem; }
+
+.delimiter {
+  color: #f34f58; }
+
 .contact {
   background-color: #f34f58;
   display: -ms-flexbox;
@@ -550,8 +570,8 @@ body {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex: 1 1 auto;
-      flex: 1 1 auto;
+  -ms-flex: 1 1 23%;
+      flex: 1 1 23%;
   margin: .5rem;
   -ms-flex-pack: center;
       justify-content: center; }

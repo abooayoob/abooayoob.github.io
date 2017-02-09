@@ -62,6 +62,7 @@ body
 
 .real-deal
   margin-bottom: 0
+  font-size: 3rem
   // transform: translate(0, -80px)
 
 // @import contact
@@ -97,12 +98,14 @@ body
 
 // @import projects
 
-.projects
+.projects,
+.whoami
   max-width: 800px
   width: 90%
   margin: 0 auto
 
-.projects__header
+.projects__header,
+.whoami__header
   text-align: center
 
 .projects__project
@@ -138,8 +141,22 @@ body
   background-image: url('../images/city-explorer-natural.jpg')
   opacity: .5
 
+.whoami__body
+  line-height: 1.5rem
+  letter-spacing: .05rem
+  border: 5px solid $dark-gray
+  background-color: white
+  color: $dark-gray
+  padding: 2rem
 
+.highlight
+  display: inline-block
+  background-color: $tomato
+  color: white
+  padding: 0 .5rem 0 .5rem
 
+.delimiter
+  color: $tomato
 
 
 // footer
@@ -162,7 +179,7 @@ body
   border: 5px solid $dark-gray
   display: flex
   align-items: center
-  flex: 1 1 auto
+  flex: 1 1 23%
   margin: .5rem
   justify-content: center
 
