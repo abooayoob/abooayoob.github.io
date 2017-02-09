@@ -546,6 +546,12 @@ body {
   color: white;
   padding: 0 .5rem 0 .5rem; }
 
+.whoami__deal {
+  background-color: #f34f58;
+  color: white;
+  padding-left: .2rem;
+  padding-right: .2rem; }
+
 .delimiter {
   color: #f34f58; }
 
