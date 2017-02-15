@@ -552,6 +552,14 @@ body {
   padding-left: .2rem;
   padding-right: .2rem; }
 
+.whoami__talk-link {
+  color: white;
+  background-color: #f34f58;
+  padding: .5rem .2rem;
+  text-align: center;
+  margin: 0 auto;
+  width: 30%; }
+
 .delimiter {
   color: #f34f58; }
 
